@@ -36,7 +36,13 @@ When it will be ready, just connect (credentials: root/root): ssh root@localhost
 Launching Mipsbe machine
 ```
 
-**NOTE** SSH port depends on the architecture for avoiding ```WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!```.
+**NOTE** SSH port depends on the architecture for avoiding `WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!`.
+
+You can connect VM by `SSH arch_name` after run `ssh_config.sh`.
+
+```
+$ ssh mipsbe
+```
 
 # Acknowledgments
 
