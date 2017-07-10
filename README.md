@@ -1,6 +1,6 @@
 # Qcow Bootstrap
 
- Qcow Bootstrap allows to set up testing environment quickly with qemu and debian images for multiple architectures on macOS.
+Qcow Bootstrap allows to set up testing environment quickly with qemu and debian images for multiple architectures on macOS.
 
 # Supported architectures
 
@@ -9,15 +9,26 @@
 - mipsbe
 - mipsle
 
-# Installation
-
-```
-git clone https://github.com/tkmru/qcow_bootstrap.git
-cd qcow_bootstrap
-./install.sh
-```
-
 # How to use
+## QEMU and Debian Image Installation
+
+```
+$ git clone https://github.com/tkmru/qcow_bootstrap.git
+$ cd qcow_bootstrap
+$ ./install.sh
+Installing QEMU
+...
+Done
+```
+
+## add SSH config
+
+```
+$ ./ssh_config.sh
+Add VM host to SSH config
+```
+
+## launch VM
 
 ```
 $ ./launch.sh mipsbe

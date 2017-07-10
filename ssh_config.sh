@@ -21,3 +21,5 @@ Host aarch64
   User root
   Port 2225
 ' >> ~/.ssh/config
+
+echo 'Add VM host to SSH config'

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Installing Qemu"
+echo "Installing QEMU"
 brew install qemu
 
 mkdir ~/qcow
