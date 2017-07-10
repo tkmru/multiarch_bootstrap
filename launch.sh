@@ -3,19 +3,19 @@
 if [[ $1 == "mipsle" ]]; then
   echo "When it will be ready, just connect (credentials: root/root): ssh root@localhost -p2222"
   echo "Launching Mipsle machine"
-  qemu-system-mipsel -M malta -kernel ~/qcow/mipsle/vmlinux-3.2.0-4-4kc-malta -hda ~/qcow/mipsle/debian_wheezy_mipsel_standard.qcow -append "root=/dev/sda1 console=tty0" -net nic -net user,hostfwd=tcp::2222-:22
+  qemu-system-mipsel -M malta -kernel ~/qcow/mipsle/vmlinux-3.2.0-4-4kc-malta -hda ~/qcow/mipsle/debian_wheezy_mipsel_standard.qcow2 -append "root=/dev/sda1 console=tty0" -net nic -net user,hostfwd=tcp::2222-:22
 fi
 
 if [[ $1 == "mipsbe" ]]; then
   echo "When it will be ready, just connect (credentials: root/root): ssh root@localhost -p2223"
   echo "Launching Mipsbe machine"
-  qemu-system-mips -M malta -kernel ~/qcow/mipsbe/vmlinux-3.2.0-4-4kc-malta -hda ~/qcow/mipsbe/debian_wheezy_mips_standard.qcow -append "root=/dev/sda1 console=tty0" -net nic -net user,hostfwd=tcp::2223-:22
+  qemu-system-mips -M malta -kernel ~/qcow/mipsbe/vmlinux-3.2.0-4-4kc-malta -hda ~/qcow/mipsbe/debian_wheezy_mips_standard.qcow2 -append "root=/dev/sda1 console=tty0" -net nic -net user,hostfwd=tcp::2223-:22
 fi
 
 if [[ $1 == "armle" ]]; then
   echo "When it will be ready, just connect (credentials: root/root): ssh root@localhost -p2224"
   echo "Launching Armle machine"
-  qemu-system-arm -M versatilepb -kernel ~/qcow/armle/vmlinuz-3.2.0-4-versatile -initrd ~/qcow/armle/initrd.img-3.2.0-4-versatile -hda ~/qcow/armle/debian_wheezy_armel_standard.qcow -append "root=/dev/sda1" -net nic -net user,hostfwd=tcp::2224-:22
+  qemu-system-arm -M versatilepb -kernel ~/qcow/armle/vmlinuz-3.2.0-4-versatile -initrd ~/qcow/armle/initrd.img-3.2.0-4-versatile -hda ~/qcow/armle/debian_wheezy_armel_standard.qcow2 -append "root=/dev/sda1" -net nic -net user,hostfwd=tcp::2224-:22
 fi
 
 if [[ $1 == "aarch64" ]]; then
