@@ -1,7 +1,11 @@
 #!/bin/bash
 
 echo "Installing QEMU"
-brew install qemu
+if [ "$(uname)" == 'Darwin' ]; then
+  brew install qemu
+elif [ "$(expr substr $(uname -n) 1 6)" == 'ubuntu' ]; then
+  apt-get install -y qemu-system-arm qemu-system-mips qemu-system-mipsel
+fi
 
 mkdir ~/qcow
 

@@ -1,6 +1,6 @@
 # Qcow Bootstrap
 
-Qcow Bootstrap allows to set up testing environment quickly with qemu and debian images for multiple architectures on macOS.
+Qcow Bootstrap allows to set up testing environment quickly with qemu and debian images for multiple architectures on macOS/ubuntu.
 
 # Supported architectures
 
