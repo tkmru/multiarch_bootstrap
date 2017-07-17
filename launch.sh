@@ -21,9 +21,9 @@ fi
 if [[ $1 == "aarch64" ]]; then
   echo "When it will be ready, just connect (credentials: root/root): ssh root@localhost -p2225"
   echo "Launching aarch64 machine"
-  qemu-system-aarch64 -m 1024 -cpu cortex-a57 -nographic -machine virt -kernel aarch64/trusty-server-cloudimg-arm64-vmlinuz-generic \
+  qemu-system-aarch64 -m 1024 -cpu cortex-a57 -nographic -machine virt -kernel ~/qcow/aarch64/trusty-server-cloudimg-arm64-vmlinuz-generic \
     -append 'root=/dev/vda1 rw rootwait mem=1024M console=ttyAMA0,38400n8 init=/usr/lib/cloud-init/uncloud-init ds=nocloud ubuntu-pass=randomstring' \
-    -drive if=none,id=image,file=aarch64/trusty-server-cloudimg-arm64-disk1.img \
+    -drive if=none,id=image,file=~/qcow/aarch64/trusty-server-cloudimg-arm64-disk1.img \
     -device virtio-blk-device,drive=image \
     -device virtio-net-device,netdev=user0 \
     -netdev user,id=user0,hostfwd=tcp::2225-:22
