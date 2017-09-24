@@ -1,6 +1,31 @@
 #!/bin/bash
 set -eu
 
+function usage {
+    cat <<EOF
+install.sh sets up multi-arch qcow2 images.
+
+Usage:
+    install.sh
+
+Options:
+    --help, -h        print this
+EOF
+}
+
+while [ $# -gt 0 ];
+do
+    case ${1} in
+
+        --help|-h)
+            usage
+            exit 1
+        ;;
+    esac
+    shift
+done
+
+
 is_setup() {
   echo "Do you setup $1? [y/N]"
   while :
