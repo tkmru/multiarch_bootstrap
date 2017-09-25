@@ -6,7 +6,7 @@ function usage {
 ssh_config.sh adds VM hosts to SSH config.
 
 Usage:
-    ssh_config.sh
+    ssh_config.sh [options]
 
 Options:
     --help, -h        print this

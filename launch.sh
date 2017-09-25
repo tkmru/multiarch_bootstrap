@@ -6,7 +6,13 @@ function usage {
 launch.sh launches multi-arch qcow2 images.
 
 Usage:
-    launch.sh <arch name>
+    launch.sh [options] <arch-name>
+
+Supported architecture
+    mipsle            SSH port: 2222
+    mipsbe            SSH port: 2223
+    armle             SSH port: 2224
+    aarch64           SSH port: 2225
 
 Options:
     --help, -h        print this

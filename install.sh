@@ -6,7 +6,7 @@ function usage {
 install.sh sets up multi-arch qcow2 images.
 
 Usage:
-    install.sh
+    install.sh [options]
 
 Options:
     --help, -h        print this
