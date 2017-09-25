@@ -21,10 +21,12 @@ do
       usage
       exit 1
     ;;
+
   esac
   shift
 done
 
+echo 'Adding VM host to SSH config...'
 echo '
 Host mipsle
   HostName localhost
@@ -46,5 +48,4 @@ Host aarch64
   User root
   Port 2225
 ' >> ~/.ssh/config
-
-echo 'Add VM host to SSH config'
+echo 'done'

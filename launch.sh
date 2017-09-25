@@ -22,6 +22,7 @@ EOF
 while [ $# -gt 0 ];
 do
   case ${1} in
+
     mipsle)
       echo "When it will be ready, just connect (credentials: root/root): ssh root@localhost -p2222"
       echo "Launching Mipsle machine"
@@ -65,6 +66,7 @@ do
       usage
       exit 1
     ;;
+
   esac
   shift
 done
