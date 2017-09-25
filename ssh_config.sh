@@ -15,14 +15,14 @@ EOF
 
 while [ $# -gt 0 ];
 do
-    case ${1} in
+  case ${1} in
 
-        --help|-h)
-            usage
-            exit 1
-        ;;
-    esac
-    shift
+    --help|-h)
+      usage
+      exit 1
+    ;;
+  esac
+  shift
 done
 
 echo '
