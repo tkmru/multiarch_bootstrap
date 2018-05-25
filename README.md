@@ -13,8 +13,8 @@ Multiarch Bootstrap allows to set up testing environment quickly with qemu and d
 ## QEMU and Debian Image Installation
 
 ```
-$ git clone https://github.com/tkmru/qcow_bootstrap.git
-$ cd qcow_bootstrap
+$ git clone https://github.com/tkmru/multiarch_bootstrap.git
+$ cd multiarch_bootstrap
 $ ./install.sh
 Installing QEMU
 ...
