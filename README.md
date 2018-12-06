@@ -38,6 +38,7 @@ Done
 ```
 $ ./ssh_config.sh
 Add VM host to SSH config
+Done
 ```
 
 ## launch VM
